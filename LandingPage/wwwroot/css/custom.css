@@ -1,7 +1,52 @@
-﻿#foto {
-    width: 20%;
-    margin: 2rem 0;
-    border-radius: 100%
+﻿.square-crop {
+    width: 25rem; /* Ancho del cuadrado */
+    height: 25rem; /* Altura del cuadrado */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative;
+    border-radius: 150%;
+    transition: filter 0.3s ease-in-out;
+}
+
+    .square-crop:hover {
+        filter: brightness(120%); /* Hace zoom al 170% al pasar el cursor sobre la imagen */
+    }
+
+#foto {
+    margin-right: 2rem;
+    width: 90%; /* Ocupa el ancho del contenedor */
+    height: 90%; /* Ocupa la altura del contenedor */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    object-position: 100% 0%;
+    transform: scale(1.5);
+}
+
+.layout-page {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+    .layout-page::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .layout-page:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.title {
+    margin-right: 5rem;
 }
 
 .welcome-section {
@@ -9,17 +54,17 @@
     color: white
 }
 
-.welcome-section h1{
-    margin-bottom: 1rem
-}
+    .welcome-section h1 {
+        margin-bottom: 1rem
+    }
 
-.welcome-section p{
-    font-family:sans-serif;
-    line-height:1.5;
-    font-size:1.25rem;
-}
+    .welcome-section p {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
 
- .skills ul{
-     list-style:none;
-     padding-left:0;
- }
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}

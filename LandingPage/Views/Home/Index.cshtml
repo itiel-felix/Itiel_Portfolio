@@ -4,13 +4,19 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome Stranger, my name is Itiel Felix (23)</h1>
-    <p>Soy un desarrollador full stack especializado en .NET y Javascript</a>.</p>
-    <img id="foto"
-         src="~/images/me.JPG" alt="picture of me" />
 
-    <partial name="_Presentation"/>
-    <partial name="_Skills"/>
+    <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+        <div class="col-md-6 title">
+            <h2>Welcome Stranger, my name is Itiel Felix (23)</h2>
+            <p>Soy un desarrollador full stack especializado en .NET y Javascript.</p>
+        </div>
+        <div class="col-md-6 square-crop">
+            <img id="foto"
+                 src="~/images/me.JPG" alt="picture of me" />
+        </div>
+    </div>
+    <partial name="_Presentation" />
+    <partial name="_Skills" />
 </div>
 
-<partial name="_ProjectsSection" model="Model.Projects"/>
+<partial name="_ProjectsSection" model="Model.Projects" />
