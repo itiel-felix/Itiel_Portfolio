@@ -1,0 +1,9 @@
+﻿
+.navbar {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; /* ajusta el ancho al contenido */
+    border-radius: 2rem;
+}
