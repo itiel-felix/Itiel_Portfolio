@@ -1,29 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Contacto";
 }
+<div class="d-flex align-items-center justify-content-center" style="margin-top:6rem">
+    <div class="container-md mx-auto max-width-form" style="max-width: 30rem;">
+        <h1> Formulario de contacto </h1>
+        <form asp-controller="" asp-action="Contact">
 
-<div class="container">
-    <h1> Formulario de contacto </h1>
+            <div class="mb-3">
+                <label for="name" class="form-label"> Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre aqui." />
+            </div>
 
-    <form asp-controller="" asp-action="Contact">
+            <div class="mb-3">
+                <label for="email" class="form-label"> Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="yourname@email.com" />
+            </div>
 
-
-        <div class="mb-3">
-            <label for="name" class="form-label"> Nombre</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre aqui." />
-
-        </div>
-        <div class="mb-3">
-
-            <label for="email" class="form-label"> Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="yourname@email.com" />
-        </div>
-
-        <div class="mb-3">
-
-            <label for="message" class="form-label"> Mensaje</label>
-            <textarea class="form-control" id="message" name="message" rows="3" ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+            <div class="mb-3">
+                <label for="message" class="form-label"> Mensaje</label>
+                <textarea class="form-control" id="message" name="message" style="max-height:15rem" rows="3"></textarea>
+            </div>
+            <div class=" text-start">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
 </div>

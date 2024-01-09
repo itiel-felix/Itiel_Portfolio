@@ -5,5 +5,6 @@
         public string? title { get; set; }
         public string? description { get; set; }
         public string? imageLocation { get; set; }
+        public string? projectUrl { get; set; }
     }
 }
