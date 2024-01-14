@@ -64,11 +64,48 @@
         font-size: 1.25rem;
     }
 
-.skills ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.max-width-form{
+.max-width-form {
     max-width: 30rem;
 }
+
+@media (max-width: 480px) {
+    .square-crop {
+        width: 5rem; /* Ancho del cuadrado */
+        height: 5rem; /* Altura del cuadrado */
+        overflow: hidden; /* Oculta el contenido que se desborda */
+        position: relative;
+        border-radius: 0%;
+    }
+}
+
+.languages {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center; /* Agrega espacio entre los elementos */
+}
+
+    .languages i {
+        position: relative;
+        margin: 1rem;
+        transform: scale(2);
+        transition: transform .2s
+    }
+
+        .languages i:hover {
+            transform: scale(3);
+            /*font-size: 2rem;*/
+        }
+    .languages a {
+        position: relative;
+        margin: 1rem;
+        transform: scale(2);
+        transition: transform .2s
+    }
+
+        .languages a:hover {
+            transform: scale(3);
+            /*font-size: 2rem;*/
+        }
