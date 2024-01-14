@@ -35,7 +35,7 @@ namespace LandingPage.Controllers
             var apellido = config.GetValue<string>("Apellido");
             _logger.LogInformation("This is a log message"+apellido);
             // Podemos apuntar a otra vista colocando el nombre del archivo
-            var listOfProjects = projectsRepo.generateProjects().Take(2).ToList();
+            var listOfProjects = projectsRepo.generateProjects().Take(3).ToList();
             var homeViewObject = new HomeIndexViewModel()
             {
                 Projects = listOfProjects,
